@@ -1,5 +1,7 @@
 import React from "react";
 import { Container, Col, Row, Button } from "react-bootstrap";
+import { faMobileAlt, faMobile, faShieldAlt, faGlobe } from "@fortawesome/free-solid-svg-icons";
+import IconText from "./IconText";
 import './Institutional.scss'
 
 const Institutional = () => (
@@ -17,6 +19,22 @@ const Institutional = () => (
                         Curabitur scelerisque placerat ultrices. Proin purus ante, congue vel arcu ac, porta condimentum mauris. 
                         Maecenas massa orci, fringilla eget fermentum nec, dignissim nec diam.
                     </p>
+                    <IconText icon={faMobileAlt} color='#fff' className="mb-2">
+                        Sem filas e burocracia
+                    </IconText>
+
+                    <IconText icon={faMobile} color='#fff' className="mb-2">
+                        Simples e prático
+                    </IconText>
+
+                    <IconText icon={faGlobe} color='#fff' className="mb-2">
+                        Abertura de conta 100% online
+                    </IconText>
+
+                    <IconText icon={faShieldAlt} color='#fff' className="mb-2">
+                        Transações mais seguras
+                    </IconText>
+
                     <Button variant="outline-light" className="mt-5">Abra sua conta</Button>
                 </Col>
             </Row>
