@@ -14,25 +14,25 @@ const CreditCard = () => (
             </Row>
             <Row>
                 <Col xs={12} lg={6} className='mb-4'>
-                    <IconText icon={faCreditCard} size={2} color='#f05656' textClassName='h5 text-muted'>
+                    <IconText icon={faCreditCard} size={2} color='#f05656' textClassName='text-muted'>
                         Crédito Pessoal
                     </IconText>
                 </Col>
 
                 <Col xs={12} lg={6} className='mb-4'>
-                    <IconText icon={faMobile} size={2} color='#f05656' textClassName='h5 text-muted'>
+                    <IconText icon={faMobile} size={2} color='#f05656' textClassName='text-muted'>
                         APP
                     </IconText>
                 </Col>
                 
                 <Col xs={12} lg={6} className='mb-4'>
-                    <IconText icon={faShoppingCart} size={2} color='#f05656' textClassName='h5 text-muted'>
+                    <IconText icon={faShoppingCart} size={2} color='#f05656' textClassName='text-muted'>
                         Pagamentos Online
                     </IconText>
                 </Col>
 
                 <Col xs={12} lg={6} className='mb-4'>
-                    <IconText icon={faWallet} size={2} color='#f05656' textClassName='h5 text-muted'>
+                    <IconText icon={faWallet} size={2} color='#f05656' textClassName='text-muted'>
                         Pagamento Digital
                     </IconText>
                 </Col>

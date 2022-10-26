@@ -11,7 +11,7 @@ const IconText = ({children, icon, size=1, className='', textClassName='', color
                 color={color}
                 />
         </Col>
-        <Col xs={12 - size} className={textClassName}>
+        <Col xs={11 - size} className={textClassName}>
             {children}
         </Col>
     </Row>
