@@ -1,0 +1,32 @@
+.faq {
+    background-color: #443a50;
+
+    &-title {
+        font-size: 2.2rem;
+        font-weight: 300;
+        line-height: 1.2;
+        text-align: center;
+
+        @media screen and (min-width:902px) {
+            font-size: 3.5rem;
+        }
+    }
+}
+
+section div.faq-card {
+    background-color: unset;
+    
+    .card-header {
+        background-color: #362e4a;
+    }
+
+    .btn-link {
+        color: #fff;
+        text-decoration: none;
+        outline: unset;
+        
+        &:active {
+            color: #fff;
+        }
+    }
+}
