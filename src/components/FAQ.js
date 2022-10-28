@@ -31,41 +31,35 @@ import {
     );
     }
     function FAQ() {
+
+        const options = [
+            {icon: faCreditCard, text: 'Cartão de crédito'},
+            {icon: faWallet, text: 'Conta e abertura'},
+            {icon: faShieldAlt, text: 'Token digital'},
+            {icon: faUserTie, text: 'Produtos e serviços'}
+        ];
+
     return (
         <section className="faq text-light">
             <Container className="py-5">
                 <h2 className="my-5 faq-title"> Dúvidas frequentes</h2>
                 <Row className="d-flex align-items-center justify-content-center">
                     <Col className="d-lg-none mb-5" xs={12}>
-                    <Row>
-                        <Col className="d-flex align-items-center justify-content-center">
-                        <FontAwesomeIcon icon={faCreditCard} size="2x" />
-                        </Col>
-                        <Col className="d-flex align-items-center justify-content-center">
-                        <FontAwesomeIcon icon={faWallet} size="2x" />
-                        </Col>
-                        <Col className="d-flex align-items-center justify-content-center">
-                        <FontAwesomeIcon icon={faShieldAlt} size="2x" />
-                        </Col>
-                        <Col className="d-flex align-items-center justify-content-center">
-                        <FontAwesomeIcon icon={faUserTie} size="2x" />
-                        </Col>
-                    </Row>
+                        <Row>
+                            {options.map(({icon}) => (
+                                <Col className="d-flex align-items-center justify-content-center">
+                                    <FontAwesomeIcon icon={icon} size="2x" />
+                                </Col>
+                            ))}
+                        </Row>
                     </Col>
 
                     <Col className="d-none d-lg-block">
-                    <IconText icon={faCreditCard} size={3} className="mb-3" textClassName="lead" color="#fff">
-                        Cartão de crédito e débito
-                    </IconText>
-                    <IconText icon={faWallet} size={3} className="mb-3" textClassName="lead" color="#fff">
-                        Conta e abertura
-                    </IconText>
-                    <IconText icon={faShieldAlt} size={3} className="mb-3" textClassName="lead" color="#fff">
-                        Token digital
-                    </IconText>
-                    <IconText icon={faUserTie} size={3} textClassName="lead" color="#fff">
-                        Produtos e serviços
-                    </IconText>
+                        {options.map(({icon, text}) => (
+                            <IconText icon={icon} size={3} className="mb-3" textClassName="lead" color="#fff">
+                                {text}
+                            </IconText>
+                        ))}
                     </Col>
 
                     <Col>
