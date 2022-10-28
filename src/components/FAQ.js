@@ -41,6 +41,11 @@ import {
 
         const [index, setIndex] = useState(0);
 
+        const handleClick = key => {
+            console.log(key);
+            setIndex(key);
+        }
+
     return (
         <section className="faq text-light">
             <Container className="py-5">
@@ -51,7 +56,7 @@ import {
                             {options.map(({icon}, key) => (
                                 <Col className="d-flex align-items-center justify-content-center" key={key}>
                                     <FontAwesomeIcon icon={icon} size="2x" color="#fff" 
-                                                        onClick={() => setIndex(key)} />
+                                                        onClick={() => handleClick(key)} />
                                 </Col>
                             ))}
                         </Row>
@@ -60,7 +65,7 @@ import {
                     <Col className="d-none d-lg-block">
                         {options.map(({icon, text}, key) => (
                             <IconText icon={icon} size={3} className="mb-3" textClassName="lead" color="#fff"
-                                        onClick={() => setIndex(key)} key={key}>
+                                        onClick={() => handleClick(key)} key={key}>
                                 {text}
                             </IconText>
                         ))}
