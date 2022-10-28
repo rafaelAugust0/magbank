@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Row, Col, Container, Card } from "react-bootstrap";
 import Accordion from "react-bootstrap/Accordion";
 import IconText from "./IconText";
@@ -39,6 +39,8 @@ import {
             {icon: faUserTie, text: 'Produtos e serviços'}
         ];
 
+        const [index, setIndex] = useState(0);
+
     return (
         <section className="faq text-light">
             <Container className="py-5">
@@ -46,24 +48,26 @@ import {
                 <Row className="d-flex align-items-center justify-content-center">
                     <Col className="d-lg-none mb-5" xs={12}>
                         <Row>
-                            {options.map(({icon}) => (
-                                <Col className="d-flex align-items-center justify-content-center">
-                                    <FontAwesomeIcon icon={icon} size="2x" />
+                            {options.map(({icon}, key) => (
+                                <Col className="d-flex align-items-center justify-content-center" key={key}>
+                                    <FontAwesomeIcon icon={icon} size="2x" color="#fff" 
+                                                        onClick={() => setIndex(key)} />
                                 </Col>
                             ))}
                         </Row>
                     </Col>
 
                     <Col className="d-none d-lg-block">
-                        {options.map(({icon, text}) => (
-                            <IconText icon={icon} size={3} className="mb-3" textClassName="lead" color="#fff">
+                        {options.map(({icon, text}, key) => (
+                            <IconText icon={icon} size={3} className="mb-3" textClassName="lead" color="#fff"
+                                        onClick={() => setIndex(key)} key={key}>
                                 {text}
                             </IconText>
                         ))}
                     </Col>
 
                     <Col>
-                    <Accordion defaultActiveKey="0">
+                    <Accordion defaultActiveKey={`${index}`}>
                     <Card className="faq-card">
                         <Card.Header>
                         <CustomToggle eventKey="0">Lorem ipsum dolor sit amet</CustomToggle>
