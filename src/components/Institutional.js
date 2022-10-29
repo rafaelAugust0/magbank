@@ -4,7 +4,7 @@ import { faMobileAlt, faMobile, faShieldAlt, faGlobe } from "@fortawesome/free-s
 import IconText from "./IconText";
 import './Institutional.scss'
 
-const Institutional = () => (
+const Institutional = ({onClick}) => (
     <section className="institutional text-light py-5">
         <Container>
             <Row>
@@ -35,7 +35,7 @@ const Institutional = () => (
                         Transações mais seguras
                     </IconText>
 
-                    <Button variant="outline-light" className="mt-5">Abra sua conta</Button>
+                    <Button variant="outline-light" className="mt-5" onClick={onClick}>Abra sua conta</Button>
                 </Col>
             </Row>
         </Container>
