@@ -1,17 +1,11 @@
 import React, {useState} from "react";
+import {Route, Routes} from 'react-router-dom'
 import Navbar from "./components/Navbar";
-import Hero from './components/Hero';
-import CreditCard from './components/CreditCard';
-import CardList from './components/CardList';
-import CenteredButton from './components/CenteredButton';
-import Institutional from "./components/Institutional";
-import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import AccountModal from "./components/AccountModal";
 
+import Home from "./views/Home";
 import "./App.scss";
-
-import posts from './data/posts';
 
 const App = () => {
 
@@ -19,19 +13,16 @@ const App = () => {
 
 
   return (
-    <div className="App">
+    <>
       <Navbar handleCreateAcc={() => setShowModal(true)} />
-      <Hero  onClick={() => setShowModal(true)} />
-      <CreditCard />
-      <CardList posts={posts} />
-      <CenteredButton onClick={() => setShowModal(true)}>
-        Abra sua conta
-      </CenteredButton>
-      <Institutional onClick={() => setShowModal(true)} />
-      <FAQ />
+      
+      <Routes>
+        <Route path="/" element={<Home handleClick={() => setShowModal(true)} />} />
+      </Routes>
+
       <Footer />
       <AccountModal show={showModal} handleClose={() => setShowModal(false)} />
-    </div>
+    </>
   )
 }
 
