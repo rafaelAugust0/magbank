@@ -5,6 +5,8 @@ import Footer from "./components/Footer";
 import AccountModal from "./components/AccountModal";
 
 import Home from "./views/Home";
+import Login from "./views/Login";
+
 import "./App.scss";
 
 const App = () => {
@@ -18,6 +20,7 @@ const App = () => {
       
       <Routes>
         <Route path="/" element={<Home handleClick={() => setShowModal(true)} />} />
+        <Route path="/login" element={<Login/>} />
       </Routes>
 
       <Footer />

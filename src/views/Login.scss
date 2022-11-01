@@ -1,0 +1,15 @@
+.login {
+    width: 100vw;
+    height: calc(100vh - 22.5rem);
+    background-image: linear-gradient(135deg, #8c00b2,#f05656 );
+    display: grid;
+    place-items: center;
+
+    @media screen and (min-width: 992px) {
+        height:  calc(100vh - 12.5rem);
+    }
+
+    &__container {
+        max-width: 22rem;
+    }
+}

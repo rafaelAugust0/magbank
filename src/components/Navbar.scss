@@ -2,11 +2,12 @@
     background-color: #8c00b2;
     border-bottom: 0.2rem solid #f05656;
 
-    a.dropdown-toggle.nav-link {
-        color: #fff;
-    }
-
-    a.dropdown-toggle.nav-link:hover {
+    .text-decoration-none {
         color: #212529;
     }
+
+    .text-decoration-none:hover {
+        color: #8c00b2;
+    }
+
 }
