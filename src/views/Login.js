@@ -14,18 +14,24 @@ const Login = () => (
                 <Image src={logo} className="mb-5" />
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>Número da conta</Form.Label>
+                        <Form.Label>
+                            <strong>Número da conta</strong>
+                        </Form.Label>
                         <Form.Control type="number" />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Label>Senha</Form.Label>
+                        <Form.Label>
+                            <strong>Senha</strong>
+                        </Form.Label>
                         <Form.Control type="password" />
                     </Form.Group>
 
-                    <Button variant="success" type="submit">
-                        Criar conta
-                    </Button>
+                    <Link to="/dashboard">
+                        <Button variant="success" type="submit">
+                            Criar conta
+                        </Button>
+                    </Link>
                 </Form>
             </Col>
         </Row>
