@@ -1,0 +1,40 @@
+.dashboard {
+
+    @media screen and (min-width:992px) {
+        min-height:  calc(100vh - 12.5rem);
+    }
+
+    &__user-avatar {
+        position: relative;
+    }
+
+    &__user-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+    }
+
+    button.options{
+        width: 100%;
+        color: #8c00b2;
+        text-decoration: none;
+        text-align: left;
+        transition: 0.8s;
+
+        &:hover, 
+        &.active {
+                background-color: #8c00b2;
+                color: #fff;
+        }
+    }
+
+    button.nav-link {
+        color: #8c00b2;
+
+        &.nav-link.active {
+            color: #626262;
+        }
+    }
+}
+
