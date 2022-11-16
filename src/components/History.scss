@@ -1,0 +1,9 @@
+.table-striped>tbody>tr>td.decrease:nth-of-type(odd) {
+    color: #ff0000;
+    font-weight: bold;
+    padding-left: 1.5rem;
+}
+
+.increase {
+    padding-left: 0.9rem;
+}

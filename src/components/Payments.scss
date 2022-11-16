@@ -1,0 +1,23 @@
+@media screen and (max-width:992px) {
+
+    .payment-form {
+        flex-direction: column;
+    }
+
+    .inmobile-wrap {
+        flex-wrap: wrap;
+    }
+
+    .inmobile-col {
+        flex-direction: column;
+    }
+}
+
+
+label.form-check-label {
+    padding-right: 3rem;
+}
+
+#bankSelect {
+    width: auto;
+}

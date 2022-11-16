@@ -6,6 +6,9 @@ import AccountModal from "./components/AccountModal";
 
 import Home from "./views/Home";
 import Login from "./views/Login";
+import Dashboard from "./views/Dashboard";
+import Payments from './components/Payments';
+import History from './components/History';
 
 import "./App.scss";
 
@@ -21,6 +24,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home handleClick={() => setShowModal(true)} />} />
         <Route path="/login" element={<Login/>} />
+        <Route path="/dashboard" element={<Dashboard/>} />
+        <Route path="/dashboard/payments" element={<Payments/>} />
+        <Route path="/dashboard/history" element={<History/>}/>
       </Routes>
 
       <Footer />

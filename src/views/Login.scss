@@ -5,6 +5,12 @@
     display: grid;
     place-items: center;
 
+    input[type=number]::-webkit-inner-spin-button { 
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        
+    }
+
     @media screen and (min-width: 992px) {
         height:  calc(100vh - 12.5rem);
     }
