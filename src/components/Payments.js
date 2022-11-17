@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import '../components/Payments.scss'
 
 
-function Payment() {
+function Payment({name, account}) {
 
     return (
         <Container className='dashboard py-5'>
@@ -23,8 +23,8 @@ function Payment() {
                             </span>
                         </Col>
                         <Col xs={9}>
-                            <h4>Rafael Augusto</h4>
-                            <p className='text-muted'>ag: 1234 c/c: 4321-5</p>
+                            <h4>{name}</h4>
+                            <p className='text-muted'>{account}</p>
                         </Col>
                     </Row>
 

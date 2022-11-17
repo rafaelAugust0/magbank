@@ -3,10 +3,9 @@ import { Container, Row, Col, Button, Tabs, Tab, Table } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle, faUser } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom"
-
 import './Dashboard.scss'
 
-const Dashboard = () => (
+const Dashboard = ({name, account}) => (
     <Container className='dashboard py-5'>
         <Row>
             <Col xs={12} lg={4}>
@@ -18,8 +17,8 @@ const Dashboard = () => (
                         </span>
                     </Col>
                     <Col xs={9}>
-                        <h4>Rafael Augusto</h4>
-                        <p className='text-muted'>ag: 1234 c/c: 4321-5</p>
+                        <h4>{name}</h4>
+                        <p className='text-muted'>{account}</p>
                     </Col>
                 </Row>
 
