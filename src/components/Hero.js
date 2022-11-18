@@ -6,7 +6,7 @@ import './Hero.scss';
 
 const Hero = ({handleCreateAcc}) => (
     <div className=' jumbotron text-center text-light hero py-5'>
-        <Row className='py-lg-5'>
+        <Row className='py-lg-5 rmv-margin'>
             <Col lg className='text-lg-right my-lg-5'>
                 <Image className='d-lg-none' src={logo} />
                 <Image className='d-none d-lg-inline-block' src={logoDesktop} />
