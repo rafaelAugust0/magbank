@@ -45,7 +45,7 @@ const App = () => {
       
       <Routes>
         <Route path="/" element={<Home handleClick={() => setShowModal(true)} />} />
-        <Route path="/login" element={<Login auth={fakeAuth}/>} />
+        <Route path="/login" element={<Login auth={fakeAuth} />} />
         <Route path="/dashboard" element={
           <PrivateRoute Component={Dashboard} logged={isLogged} />
         } 
@@ -61,7 +61,7 @@ const App = () => {
       </Routes>
 
       <Footer />
-      <AccountModal show={showModal} handleClose={() => setShowModal(false)} />
+      <AccountModal show={showModal} handleClose={() => setShowModal(false)} auth={fakeAuth} />
     </>
   )
 }

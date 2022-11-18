@@ -1,6 +1,6 @@
 import React from "react";
-import {Form, Link, useNavigate} from 'react-router-dom'
-import { Container, Navbar, Nav, Button, ButtonGroup, NavDropdown} from "react-bootstrap";
+import { Link, useNavigate} from 'react-router-dom'
+import { Container, Navbar, Nav, Button, ButtonGroup, NavDropdown, Form} from "react-bootstrap";
 import './Navbar.scss';
 import logo from '../assets/logo.svg';
 
@@ -65,9 +65,10 @@ const Navigation = ({ handleCreateAcc, logged, auth }) => {
                                         </NavDropdown.Item>
                                     </NavDropdown>
                                 </Button>
-                                <Button variant="outline-light" onClick={handleCreateAcc}>
-                                    Abra sua conta
-                                </Button>
+                                
+                                    <Button variant="outline-light" onClick={handleCreateAcc}>
+                                        Abra sua conta
+                                    </Button>
                             </ButtonGroup>
                         </Navbar.Collapse>
                     </>
