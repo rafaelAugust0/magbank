@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# MAGBANK - the only bank with imagination!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The initial proposal of this project was make a preview of a bank, using the REACT technology, and extract many resources that this library can possibilite, like styled components and redirect routes.
 
-## Available Scripts
+For styles, I used SASS pre-processor and some utilitary classes provided by bootstrap.
 
-In the project directory, you can run:
+For the routes, I used the React Router Dom.
 
-### `npm start`
+For a fake authentication, I used some properties provided by own React, just to simulate a real bank record.
 
-Runs the app in the development mode.\
+
+## How you can run the application:
+
+### `npm run start`
+
+Run the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Deployment:
 
-### `npm run build`
+### `https://magbank-lovat.vercel.app/`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Magbank desktop preview
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![App Screenshot](https://uploaddeimagens.com.br/images/004/168/909/full/dsktp-prev.png?1668805109)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Magbank mobile preview
 
-### `npm run eject`
+![App Screenshot](https://uploaddeimagens.com.br/images/004/168/929/full/mobile_prev.png?1668806195)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Features
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Corresponding responsively
+- Fake auth for a real experience
+- Interactivity
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Learn about the technologies here:
+- about SASS: https://sass-lang.com/
+- about REACT APP: https://create-react-app.dev/
+- about BOOTSTRAP: https://getbootstrap.com/
+- about REACT-BOOTSTRAP: https://react-bootstrap.netlify.app/
