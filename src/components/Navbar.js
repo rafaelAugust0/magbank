@@ -16,16 +16,16 @@ const Navigation = ({ handleCreateAcc, logged, auth }) => {
     return (
         <Navbar variant="dark" expand="lg">
             <Container>
-                <Navbar.Brand href="#home">
+                <div href="#home">
                     <Link to="/">
                         <img
                             src= {logo}
                             height="30"
-                            className="d-inline-block align-top"
+                            className="d-inline-block align-top px-5"
                             alt="Magbank logo"
                         />
                     </Link>
-                </Navbar.Brand>
+                </div>
 
                 {logged && (
                     <>

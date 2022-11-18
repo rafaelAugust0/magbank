@@ -11,13 +11,13 @@ import posts from '../data/posts';
 const Home = ({handleClick}) => (
 
     <>
-        <Hero />
+        <Hero handleCreateAcc={handleClick}/>
         <CreditCard />
         <CardList posts={posts} />
         <CenteredButton onClick={handleClick}>
             Abra sua conta
         </CenteredButton>
-        <Institutional  />
+        <Institutional onClick={handleClick} />
         <FAQ />
     </>
 )

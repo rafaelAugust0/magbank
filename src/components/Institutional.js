@@ -6,7 +6,7 @@ import './Institutional.scss'
 
 const Institutional = ({onClick}) => (
     <section className="institutional text-light py-5">
-        <Container>
+        <Container id="quemsomos">
             <Row>
                 <Col xs={12} lg={5} />
                 <Col xs={12} lg={7}>

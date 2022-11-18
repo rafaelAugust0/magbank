@@ -21,7 +21,7 @@ import {
 
     return (
         <button
-        class="btn btn-link"
+        className="btn btn-link"
         type="button"
         style={{ backgroundColor: "unset" }}
         onClick={decoratedOnClick}
@@ -52,7 +52,7 @@ import {
 
     return (
         <section className="faq text-light">
-            <Container className="py-5">
+            <Container className="py-5" id="faq">
                 <h2 className="my-5 faq-title"> Dúvidas frequentes</h2>
                 <Row className="d-flex align-items-center justify-content-center">
                     <Col className="d-lg-none mb-5" xs={12}>
